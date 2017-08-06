@@ -49,7 +49,7 @@ elif [[ $unamestr == 'Darwin' ]]; then
 
 
     echo "Installing ross's dot files to .rcn"
-    git clone --depth=1 https://github.com/rcnewman/dotfiles.git "$HOME/.rcn"
+    git clone --depth=1 https://github.com/rcnewman/.dot.git "$HOME/.rcn"
     cd "$HOME/.rcn"
     [ "$1" = "ask" ] && export ASK="true"
     rake install
